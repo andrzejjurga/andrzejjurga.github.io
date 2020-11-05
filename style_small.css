@@ -47,10 +47,12 @@ a{
     color: white;
 }
 
-header a:hover{
-    background-color: white;
-    border-color: black;
-    color: black;
+
+
+@media(hover: hover) and (pointer: fine) {
+    a:hover {
+        background-color: yellow;
+    }
 }
 
 #banner{
