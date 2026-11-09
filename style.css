@@ -122,3 +122,4 @@ html:not(.js) .buf + .buf { margin-top: 3em; }
   .tabline-right, .sl-branch, .sl-enc, .sl-ft { display: none; }
   .statusline > span { padding: 0 1ch; }
 }
+.quote + .quote { margin-top: .8em; }
