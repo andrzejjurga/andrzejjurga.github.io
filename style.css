@@ -126,6 +126,7 @@ html.js .l::before { content: attr(data-ln); }
 }
 .fold-toggle:hover { text-decoration: underline; }
 .media { padding-top: .5em; padding-bottom: .5em; }
+.media img { display: block; width: 100%; max-width: 420px; height: auto; border: 1px solid var(--surface1); border-radius: 4px; }
 .media video { display: block; max-width: min(100%, 560px); border: 1px solid var(--surface1); border-radius: 4px; background: var(--crust); }
 
 /* ---------- statusline ---------- */

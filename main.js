@@ -88,7 +88,6 @@
     if (t === 'latte') document.documentElement.dataset.theme = 'latte';
     else delete document.documentElement.dataset.theme;
     $('meta[name="theme-color"]').content = t === 'latte' ? '#eff1f5' : '#1e1e2e';
-    store.set('theme', t);
   }
 
   function toggleFold(btn) {

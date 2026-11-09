@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="style.css">
   <script>
     document.documentElement.classList.add('js');
-    try { var t = localStorage.getItem('theme'); if (t === 'latte') document.documentElement.dataset.theme = 'latte'; } catch (e) {}
   </script>
 </head>
 <body>
@@ -49,26 +48,27 @@
       <section class="buf" id="about" data-file="about.md" data-ft="markdown">
         <h1 class="l h1"><span class="mk"># </span>Andrzej Jurga</h1>
         <p class="l"></p>
-        <p class="l lead">AI Integrations Engineer at <span class="em">XTM International</span> <span class="dim">·</span> Poznań, Poland</p>
+        <p class="l lead">AI Integrations Engineer <span class="dim">·</span> Poznań, Poland</p>
         <p class="l"></p>
-        <p class="l quote"><span class="mk">&gt; </span>5+ years at XTM International. After five years in 2nd-line support (debugging customer issues on Linux servers, wiring MT engines and LLMs into translation workflows, scripting the XTM API in Python) I moved into AI integrations in July 2026. I like hard technical problems and removing repetitive work.</p>
+        <p class="l quote"><span class="mk">&gt; </span>I fell in love with coding because it won't let you half-understand anything. To make something actually work you have to understand it to a very high degree: how the data is shaped, why the light falls on a mountain the way it does, what really happens between a request and a response.</p>
+        <p class="l quote"><span class="mk">&gt; </span></p>
+        <p class="l quote"><span class="mk">&gt; </span>That itch has taken me from my first programs in technical school, through five years of untangling real production problems in support, to building AI agents today. Sooner or later, every new tool ends up taken apart until it makes sense.</p>
         <p class="l"></p>
-        <h2 class="l h2"><span class="mk">## </span>now</h2>
-        <p class="l li"><span class="mk">- </span>building AI agents and RAG pipelines in Python with <code>google adk</code></p>
-        <p class="l li"><span class="mk">- </span>connecting agents to internal tools and data through <code>mcp</code></p>
-        <p class="l li"><span class="mk">- </span>automating processes end-to-end with <code>n8n</code></p>
+        <h2 class="l h2"><span class="mk">## </span>what I'm into right now</h2>
+        <p class="l li"><span class="mk">- </span>AI agents that do real work, plugged into internal tools through <code>mcp</code></p>
+        <p class="l li"><span class="mk">- </span>RAG over messy, real-world documentation</p>
+        <p class="l li"><span class="mk">- </span>automating the boring parts away with <code>n8n</code></p>
+        <p class="l li"><span class="mk">- </span>tweaking my neovim config when I should be doing any of the above</p>
         <p class="l"></p>
         <h2 class="l h2"><span class="mk">## </span>stack</h2>
         <p class="l kv"><span class="k">primary</span><span class="v">python</span></p>
         <p class="l kv"><span class="k">ai</span><span class="v">google adk · ai agents · rag · mcp · n8n · llm integrations</span></p>
         <p class="l kv"><span class="k">data</span><span class="v">rest apis · json · xml · xpath · regex · sql</span></p>
-        <p class="l kv"><span class="k">also</span><span class="v">typescript · node.js · c · c++ · opengl</span></p>
-        <p class="l kv"><span class="k">tools</span><span class="v">linux · git · neovim · jira</span></p>
+        <p class="l kv"><span class="k">tools</span><span class="v">linux · git · neovim</span></p>
         <p class="l"></p>
-        <h2 class="l h2"><span class="mk">## </span>education</h2>
-        <p class="l kv"><span class="k">2021–25</span><span class="v">Eng. degree in Computer Science <span class="dim">·</span> Adam Mickiewicz University, Poznań</span></p>
-        <p class="l kv"><span class="k">2017–21</span><span class="v">IT Technician <span class="dim">·</span> ZSK im. H. Cegielskiego, Poznań</span></p>
-        <p class="l kv"><span class="k">certs</span><span class="v">Cisco CCNAv7: Introduction to Networks <span class="dim">·</span> EE.08 <span class="dim">·</span> Cisco IT Essentials</span></p>
+        <h2 class="l h2"><span class="mk">## </span>background</h2>
+        <p class="l li"><span class="mk">- </span>Eng. degree in Computer Science, Adam Mickiewicz University (2025)</p>
+        <p class="l li"><span class="mk">- </span>5 years in 2nd-line support at XTM International, now building AI there</p>
         <p class="l"></p>
         <p class="l comment">&lt;!-- press 2 or type :e projects to see what I've built --&gt;</p>
       </section>
@@ -104,6 +104,8 @@
         <p class="l li"><span class="mk">- </span>diffuse + Phong specular lighting; water classified from SRTM water-body masks</p>
         <p class="l li"><span class="mk">- </span>animated water with normal mapping, satellite textures, free camera</p>
         <p class="l"></p>
+        <div class="l media"><img src="images/earth-visualizer.jpg" width="1100" height="1070" loading="lazy" alt="Earth Visualizer rendering a mountain range beside a lake, with satellite textures on SRTM terrain"></div>
+        <p class="l"></p>
         <p class="l kv"><span class="k">stack</span><span class="v"><code>c++</code> <code>opengl 3.3</code> <code>glsl</code> <code>glfw</code> <code>glm</code> <code>imgui</code></span></p>
         <p class="l kv"><span class="k">links</span><span class="v"><span class="private">private repo (university gitlab)</span></span></p>
         <p class="l"></p>
@@ -121,11 +123,11 @@
           <div class="l media"><video data-src="video/fractal-explorer.mp4" muted loop playsinline preload="none" aria-label="Fractal Explorer gameplay"></video></div>
         </div>
         <p class="l"></p>
-        <h3 class="l h3"><span class="mk">### </span>trygonometria</h3>
-        <p class="l">An interactive plotter for sin, cos, tan and cot with asymptote detection. One of my first C++ projects (2020).</p>
+        <h3 class="l h3"><span class="mk">### </span>graphic calculator</h3>
+        <p class="l">A graphing calculator that plots sin, cos, tan and cot with asymptote detection. One of my first C++ projects (2020).</p>
         <p class="l kv"><span class="k">links</span><span class="v"><code>c++</code> <code>sfml</code> <code>tgui</code> <span class="dim">·</span> <span class="private">private repo</span> <span class="dim">·</span> <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="fold-tryg">▸ preview</button></span></p>
         <div class="fold" id="fold-tryg" hidden>
-          <div class="l media"><video data-src="video/trygonometria.mp4" muted loop playsinline preload="none" aria-label="Trygonometria plotter demo"></video></div>
+          <div class="l media"><video data-src="video/trygonometria.mp4" muted loop playsinline preload="none" aria-label="Graphic calculator demo"></video></div>
         </div>
       </section>
 
