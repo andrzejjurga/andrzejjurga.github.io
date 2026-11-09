@@ -31,18 +31,7 @@
   </nav>
 
   <div class="workspace">
-    <aside class="tree" aria-label="File tree">
-      <p class="tree-root">~/andrzej</p>
-      <p class="tree-dir">▾ docs</p>
-      <a class="tree-file" href="#about" data-buf="about">about.md</a>
-      <a class="tree-file" href="#projects" data-buf="projects">projects.md</a>
-      <a class="tree-file" href="#experience" data-buf="experience">experience.md</a>
-      <a class="tree-file" href="#contact" data-buf="contact">contact.md</a>
-      <p class="tree-dir">▸ .config</p>
-      <a class="tree-file dim" href="#help" data-buf="help">help.txt</a>
-    </aside>
-
-    <main class="buffer" id="buffer" tabindex="-1">
+    <main class="buffer" id="buffer">
 
       <!-- ============ about.md ============ -->
       <section class="buf" id="about" data-file="about.md" data-ft="markdown">
@@ -70,7 +59,7 @@
         <p class="l li"><span class="mk">- </span>Eng. degree in Computer Science, Adam Mickiewicz University (2025)</p>
         <p class="l li"><span class="mk">- </span>5 years in 2nd-line support at XTM International, now building AI there</p>
         <p class="l"></p>
-        <p class="l comment">&lt;!-- press 2 or type :e projects to see what I've built --&gt;</p>
+        <p class="l comment">&lt;!-- projects.md has the things I've built --&gt;</p>
       </section>
 
       <!-- ============ projects.md ============ -->
@@ -168,27 +157,6 @@
         <p class="l comment">&lt;!-- happy to talk about AI agents, automation, or anyone's nvim config --&gt;</p>
       </section>
 
-      <!-- ============ help.txt ============ -->
-      <section class="buf" id="help" data-file="help.txt" data-ft="help">
-        <h1 class="l h1">*help.txt*  <span class="dim">how to move around</span></h1>
-        <p class="l"></p>
-        <p class="l kv"><span class="k">j / k</span><span class="v">move the cursor down / up (arrow keys work too)</span></p>
-        <p class="l kv"><span class="k">gg / G</span><span class="v">jump to the top / bottom</span></p>
-        <p class="l kv"><span class="k">ctrl-d / u</span><span class="v">half a page down / up</span></p>
-        <p class="l kv"><span class="k">1 – 4</span><span class="v">switch buffer</span></p>
-        <p class="l kv"><span class="k">H / L</span><span class="v">previous / next buffer</span></p>
-        <p class="l kv"><span class="k">enter</span><span class="v">open the link (or toggle the preview) on the cursor line</span></p>
-        <p class="l kv"><span class="k">:</span><span class="v">command line</span></p>
-        <p class="l"></p>
-        <h2 class="l h2">commands</h2>
-        <p class="l kv"><span class="k">:e {name}</span><span class="v">open about, projects, experience or contact</span></p>
-        <p class="l kv"><span class="k">:bn / :bp</span><span class="v">next / previous buffer</span></p>
-        <p class="l kv"><span class="k">:colo {name}</span><span class="v">mocha or latte</span></p>
-        <p class="l kv"><span class="k">:set rnu</span><span class="v">relative line numbers (:set nornu to turn off)</span></p>
-        <p class="l kv"><span class="k">:q</span><span class="v">try it</span></p>
-        <p class="l"></p>
-        <p class="l comment">Not a fan of keyboards? Everything is clickable.</p>
-      </section>
     </main>
   </div>
 
@@ -199,17 +167,8 @@
     <span class="sl-fill"></span>
     <span class="sl-ft" id="sl-ft">markdown</span>
     <span class="sl-enc">utf-8</span>
-    <span class="sl-pct" id="sl-pct">Top</span>
-    <span class="sl-pos" id="sl-pos">1:1</span>
   </footer>
 
-  <div class="cmdline">
-    <form id="cmd-form" autocomplete="off" hidden>
-      <label for="cmd-input" class="cmd-prefix">:</label>
-      <input id="cmd-input" type="text" spellcheck="false" autocapitalize="off" aria-label="Command">
-    </form>
-    <button type="button" class="cmd-msg" id="cmd-msg">type <kbd>:help</kbd> and press enter · or tap here</button>
-  </div>
 </div>
 <script src="main.js"></script>
 </body>
