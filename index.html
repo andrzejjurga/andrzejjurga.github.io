@@ -1,101 +1,214 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrzej Jurga</title>
+  <meta name="description" content="Andrzej Jurga — AI Integrations Engineer at XTM International, Poznań. Python, AI agents, RAG, MCP, n8n.">
+  <meta name="theme-color" content="#1e1e2e">
+  <meta property="og:title" content="Andrzej Jurga">
+  <meta property="og:description" content="AI Integrations Engineer at XTM International · Poznań, Poland">
+  <meta property="og:url" content="https://andrzejjurga.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e1e2e'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23cba6f7'%3E:a%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t === 'latte') document.documentElement.dataset.theme = 'latte'; } catch (e) {}
+  </script>
+</head>
+<body>
+<div class="nvim">
 
-        <title>Andrzej Jurga kl. 4C</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Podsumowanie umiejętności i projektów Andrzeja Jurgi">
-        <meta name="keywords" content="portfolio,praca,oferty pracy,programista,junior,tworzenie stron www,strona,projektowanie stron internetowych">
-        <link rel="stylesheet" media="screen and (min-width: 1100px)" href="style_large.css"/>
-        <link rel="stylesheet" media="screen and (max-width: 1100px) and (min-width: 600px)" href="style_medium.css"/>
-        <link rel="stylesheet" media="screen and (max-width: 600px)" href="style_small.css"/>
-    </head>
-    <body>
-        <header>
-            <p>Andrzej Jurga</p>
-            <a href="#about"><div>O mnie</div></a>
-            <a href="#projects"><div>Moje Projekty</div></a>
-            <a href="#forms"><div>Kontakt</div></a>
-        </header>
-        <div id="banner">
-            <div>
-                <h1>std::cout&lt;&lt;"Hello there!"&lt;&lt;std::endl;</h1>
-            </div>
+  <nav class="tabline" aria-label="Buffers">
+    <a class="tab" href="#about" data-buf="about"><span class="tab-n">1</span>about.md</a>
+    <a class="tab" href="#projects" data-buf="projects"><span class="tab-n">2</span>projects.md</a>
+    <a class="tab" href="#experience" data-buf="experience"><span class="tab-n">3</span>experience.md</a>
+    <a class="tab" href="#contact" data-buf="contact"><span class="tab-n">4</span>contact.md</a>
+    <span class="tabline-fill"></span>
+    <span class="tabline-right">andrzejjurga</span>
+  </nav>
+
+  <div class="workspace">
+    <aside class="tree" aria-label="File tree">
+      <p class="tree-root">~/andrzej</p>
+      <p class="tree-dir">▾ docs</p>
+      <a class="tree-file" href="#about" data-buf="about">about.md</a>
+      <a class="tree-file" href="#projects" data-buf="projects">projects.md</a>
+      <a class="tree-file" href="#experience" data-buf="experience">experience.md</a>
+      <a class="tree-file" href="#contact" data-buf="contact">contact.md</a>
+      <p class="tree-dir">▸ .config</p>
+      <a class="tree-file dim" href="#help" data-buf="help">help.txt</a>
+    </aside>
+
+    <main class="buffer" id="buffer" tabindex="-1">
+
+      <!-- ============ about.md ============ -->
+      <section class="buf" id="about" data-file="about.md" data-ft="markdown">
+        <h1 class="l h1"><span class="mk"># </span>Andrzej Jurga</h1>
+        <p class="l"></p>
+        <p class="l lead">AI Integrations Engineer at <span class="em">XTM International</span> <span class="dim">·</span> Poznań, Poland</p>
+        <p class="l"></p>
+        <p class="l quote"><span class="mk">&gt; </span>5+ years at XTM International. After five years in 2nd-line support (debugging customer issues on Linux servers, wiring MT engines and LLMs into translation workflows, scripting the XTM API in Python) I moved into AI integrations in July 2026. I like hard technical problems and removing repetitive work.</p>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>now</h2>
+        <p class="l li"><span class="mk">- </span>building AI agents and RAG pipelines in Python with <code>google adk</code></p>
+        <p class="l li"><span class="mk">- </span>connecting agents to internal tools and data through <code>mcp</code></p>
+        <p class="l li"><span class="mk">- </span>automating processes end-to-end with <code>n8n</code></p>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>stack</h2>
+        <p class="l kv"><span class="k">primary</span><span class="v">python</span></p>
+        <p class="l kv"><span class="k">ai</span><span class="v">google adk · ai agents · rag · mcp · n8n · llm integrations</span></p>
+        <p class="l kv"><span class="k">data</span><span class="v">rest apis · json · xml · xpath · regex · sql</span></p>
+        <p class="l kv"><span class="k">also</span><span class="v">typescript · node.js · c · c++ · opengl</span></p>
+        <p class="l kv"><span class="k">tools</span><span class="v">linux · git · neovim · jira</span></p>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>education</h2>
+        <p class="l kv"><span class="k">2021–25</span><span class="v">Eng. degree in Computer Science <span class="dim">·</span> Adam Mickiewicz University, Poznań</span></p>
+        <p class="l kv"><span class="k">2017–21</span><span class="v">IT Technician <span class="dim">·</span> ZSK im. H. Cegielskiego, Poznań</span></p>
+        <p class="l kv"><span class="k">certs</span><span class="v">Cisco CCNAv7: Introduction to Networks <span class="dim">·</span> EE.08 <span class="dim">·</span> Cisco IT Essentials</span></p>
+        <p class="l"></p>
+        <p class="l comment">&lt;!-- press 2 or type :e projects to see what I've built --&gt;</p>
+      </section>
+
+      <!-- ============ projects.md ============ -->
+      <section class="buf" id="projects" data-file="projects.md" data-ft="markdown">
+        <h1 class="l h1"><span class="mk"># </span>projects</h1>
+        <p class="l"></p>
+
+        <h2 class="l h2"><span class="mk">## </span>izery <span class="dim">—</span> waste collection system <span class="badge">featured</span></h2>
+        <p class="l meta">backend &amp; database <span class="dim">·</span> team of 4 <span class="dim">·</span> engineering thesis, AMU 2025</p>
+        <p class="l"></p>
+        <p class="l">A system for ZUOK „Izery”, a municipal waste company in Lubomierz. Staff manage collection schedules in a web panel; residents get them, with reminders, in a mobile app. I built the server and designed the database.</p>
+        <p class="l"></p>
+        <p class="l li"><span class="mk">- </span>REST API in Node.js + TypeScript + Express serving both the React web panel and the React Native app</p>
+        <p class="l li"><span class="mk">- </span>MySQL schema with <span class="em">temporal versioning</span>: schedule changes are kept as history instead of being overwritten (my thesis chapter)</p>
+        <p class="l li"><span class="mk">- </span>JWT authentication with bcrypt-hashed passwords, file uploads, rotating logs</p>
+        <p class="l li"><span class="mk">- </span>scheduled push notifications for upcoming collections with node-cron + Expo</p>
+        <p class="l li"><span class="mk">- </span>unit and integration tests with Jest + supertest; load-tested for ~30k users</p>
+        <p class="l li"><span class="mk">- </span>deployed to the client's infrastructure, accepted after handover, published on Google Play</p>
+        <p class="l"></p>
+        <p class="l kv"><span class="k">stack</span><span class="v"><code>typescript</code> <code>node.js</code> <code>express</code> <code>mysql</code> <code>jwt</code> <code>jest</code> <code>expo</code></span></p>
+        <p class="l kv"><span class="k">links</span><span class="v"><a href="https://play.google.com/store/apps/details?id=com.michal.pacyna.wywozodpadow" target="_blank" rel="noopener">google play ↗</a> <span class="dim">·</span> <span class="private">private repo</span></span></p>
+        <p class="l"></p>
+
+        <h2 class="l h2"><span class="mk">## </span>earth visualizer <span class="dim">—</span> 3D terrain renderer <span class="badge">featured</span></h2>
+        <p class="l meta">base engine &amp; lighting <span class="dim">·</span> team of 3 <span class="dim">·</span> 3D graphics course, AMU 2024</p>
+        <p class="l"></p>
+        <p class="l">Renders a 1°×1° patch of Earth from NASA SRTM elevation data at 30&nbsp;m resolution, lit by the sun for any chosen date and time. I wrote the engine the rest of the team built on.</p>
+        <p class="l"></p>
+        <p class="l li"><span class="mk">- </span>HGT loader that turns raw elevation data into a terrain mesh, with heavy memory optimisation</p>
+        <p class="l li"><span class="mk">- </span>multithreaded normal generation and simple detection of corrupt data points</p>
+        <p class="l li"><span class="mk">- </span>diffuse + Phong specular lighting; water classified from SRTM water-body masks</p>
+        <p class="l li"><span class="mk">- </span>animated water with normal mapping, satellite textures, free camera</p>
+        <p class="l"></p>
+        <p class="l kv"><span class="k">stack</span><span class="v"><code>c++</code> <code>opengl 3.3</code> <code>glsl</code> <code>glfw</code> <code>glm</code> <code>imgui</code></span></p>
+        <p class="l kv"><span class="k">links</span><span class="v"><span class="private">private repo (university gitlab)</span></span></p>
+        <p class="l"></p>
+
+        <h2 class="l h2"><span class="mk">## </span>other</h2>
+        <p class="l"></p>
+        <h3 class="l h3"><span class="mk">### </span>microshell</h3>
+        <p class="l">A small Unix shell in C: <code>cd</code>, <code>history</code> with search and delete, <code>grep</code> with simple and extended regex, <code>more</code>. Operating Systems course, AMU.</p>
+        <p class="l kv"><span class="k">links</span><span class="v"><code>c</code> <span class="dim">·</span> <a href="https://github.com/andrzejjurga/microshell" target="_blank" rel="noopener">github ↗</a></span></p>
+        <p class="l"></p>
+        <h3 class="l h3"><span class="mk">### </span>fractal explorer</h3>
+        <p class="l">A 2D game where you fly through the Mandelbrot set. Team of 3; I wrote the player, enemies, animation, explosions, physics world and music.</p>
+        <p class="l kv"><span class="k">links</span><span class="v"><code>c++</code> <code>sfml</code> <code>box2d</code> <span class="dim">·</span> <a href="https://github.com/andrzejjurga/Fractal_Explorer" target="_blank" rel="noopener">github ↗</a> <span class="dim">·</span> <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="fold-fractal">▸ preview</button></span></p>
+        <div class="fold" id="fold-fractal" hidden>
+          <div class="l media"><video data-src="video/fractal-explorer.mp4" muted loop playsinline preload="none" aria-label="Fractal Explorer gameplay"></video></div>
         </div>
-        <article>
-            <div id="about">
-                <div id="img"></div>
-                <h2>O mnie</h2>
-                <p>
-                    Nazywam się Andrzej Jurga. Jestem uczniem Technikum Komunikacji im. Hipolita Cegielskiego.
-                    Uwielbiam tworzyć, a programowanie otworzyło mi drogę do wykorzystywania komputera przy poznawaniu świata.
-                    Zaczynałem od C++, ponieważ najłatwiej było trafić na materiały do jego nauki. Cieszę się z tego wyboru gdyż, dało mi to solidne podstawy w dalszym rozwoju.  
-                    Obecnie zajmuję się głównie projektami, które sam sobie narzucę. Efekty mojej pracy nad częścią z nich można zobaczyć na moim GitHubie.
-                </p>
-            </div>
-            <div id="projects">
-                <h2>Projekty:</h2>
-                <div class="row">
-                    <div id="first" onmouseover="play('.video1')" onmouseout="pause('.video1')">
-                        <video class="video1" src="./video/clip1.mp4" preload loop></video>
-                        <h3>Fraktal explorer</h3>
-                        Jest to prototyp gry, w którym można zwiedzać legendarny zbiór mandelbrota.
-                    </div>
-                    <div id="second" onmouseover="play('.video2')" onmouseout="pause('.video2')">
-                        <video class="video2" src="./video/clip2.mp4" preload loop></video>
-                        <h3>Kalkulator trygonometryczny</h3>
-                        Pozwala na graficzną ilustrację przebiegu funkcji trygonometrycznych
-                    </div>
+        <p class="l"></p>
+        <h3 class="l h3"><span class="mk">### </span>trygonometria</h3>
+        <p class="l">An interactive plotter for sin, cos, tan and cot with asymptote detection. One of my first C++ projects (2020).</p>
+        <p class="l kv"><span class="k">links</span><span class="v"><code>c++</code> <code>sfml</code> <code>tgui</code> <span class="dim">·</span> <span class="private">private repo</span> <span class="dim">·</span> <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="fold-tryg">▸ preview</button></span></p>
+        <div class="fold" id="fold-tryg" hidden>
+          <div class="l media"><video data-src="video/trygonometria.mp4" muted loop playsinline preload="none" aria-label="Trygonometria plotter demo"></video></div>
+        </div>
+      </section>
 
-                    <div id="second" onmouseover="play('.video3')" onmouseout="pause('.video3')">
-                        <video class="video3" src="./video/clip3.mp4" preload loop></video>
-                        <h3>System podlewania</h3>
-                        Bada wilgotność gleby oraz dostarcza wodę roślinom
-                    </div>
-                    <div id="second" onmouseover="play('.video4')" onmouseout="pause('.video4')">
-                        <video class="video4" src="./video/clip4.mp4" preload loop></video>
-                        <h3>API kalendarz Google</h3>
-                        Pobiera informację z prywatnego kalendarza i przerabia je na wykresy
-                    </div>
-                </div>
-            </div>
-            <div id=technologies>
-                <h2>Technologie:</h2>
-                <div>
-                    <div><a href="https://isocpp.org/"><img class="tech" src="./images/cpp.svg"></a></div>
-                    <div><a href="https://www.sfml-dev.org/"><img src="./images/sfml.svg"></a></div>
-                    <div><a href="https://box2d.org/about/"><img src="./images/box2d.svg"></a></div>
-                    <div><a href="https://pl.reactjs.org/"><img src="./images/react.svg"></a></div>
-                    <div><a href="https://nodejs.org/en/"><img src="./images/node.svg"></a></div>
-                    <div><a href=""><img src="./images/html.png"></a></div>
-                    <div><a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="./images/css.svg"></a></div>
-                    <div><a href="https://www.javascript.com/"><img src="./images/js.svg"></a></div>
-                </div>
-            </div>
-            <div id=forms>
-                <h2>Kontakt:</h2>
-                <form>
-                    <input type="text" name="name" placeholder="Imię">
-                    <input type="text" name="surname" placeholder="Nazwisko">
-                    <input type="text" name="email" placeholder="E-mail">
-                    <textarea rows="5" placeholder="treść wiadomości"></textarea>
-                    <div>
-                        <input type="reset" value="Wyczyść">
-                        <input type="submit" value="Wyślij">
-                    </div>
-                </form>
-            </div>
-        </article>
-        <footer>
-            <p>
-                Andrzej Jurga kl. 4C
-            </p>
-            <p>
-                <a href="https://www.zsk.poznan.pl/"> Zespół Szkół Komunikacji im. Hipolita Cegielskiego </a>
-            </p>
-        </footer>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+      <!-- ============ experience.md ============ -->
+      <section class="buf" id="experience" data-file="experience.md" data-ft="markdown">
+        <h1 class="l h1"><span class="mk"># </span>experience</h1>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>AI Integrations Engineer <span class="dim">·</span> XTM International</h2>
+        <p class="l meta">Jul 2026 – present</p>
+        <p class="l li"><span class="mk">- </span>find places where generative AI can take manual work out of internal processes</p>
+        <p class="l li"><span class="mk">- </span>build AI agents and RAG solutions in Python with Google Cloud ADK</p>
+        <p class="l li"><span class="mk">- </span>connect agents to internal tools and data with MCP integrations</p>
+        <p class="l li"><span class="mk">- </span>design and maintain n8n workflows that tie systems together</p>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>Support Engineer, 2nd line <span class="dim">·</span> XTM International</h2>
+        <p class="l meta">Jul 2021 – Jun 2026</p>
+        <p class="l li"><span class="mk">- </span>investigated and resolved complex customer issues and escalations, including Linux server troubleshooting</p>
+        <p class="l li"><span class="mk">- </span>worked directly with customers to find root causes and deliver fixes</p>
+        <p class="l li"><span class="mk">- </span>integrated MT engines and LLMs into translation workflows and debugged those integrations</p>
+        <p class="l li"><span class="mk">- </span>wrote Python scripts against the XTM API to automate customer and internal tasks</p>
+        <p class="l li"><span class="mk">- </span>reported bugs in Jira and worked with developers until they were fixed</p>
+        <p class="l"></p>
+        <h2 class="l h2"><span class="mk">## </span>Technical Help Desk Intern <span class="dim">·</span> Volkswagen Group Polska</h2>
+        <p class="l meta">Jun 2020</p>
+        <p class="l li"><span class="mk">- </span>set up workstations, installed operating systems and applications, troubleshot hardware</p>
+        <p class="l li"><span class="mk">- </span>supported users with technical issues and worked with relational databases</p>
+      </section>
+
+      <!-- ============ contact.md ============ -->
+      <section class="buf" id="contact" data-file="contact.md" data-ft="markdown">
+        <h1 class="l h1"><span class="mk"># </span>contact</h1>
+        <p class="l"></p>
+        <p class="l kv"><span class="k">email</span><span class="v"><a href="mailto:ajurga1025@gmail.com">ajurga1025@gmail.com</a></span></p>
+        <p class="l kv"><span class="k">github</span><span class="v"><a href="https://github.com/andrzejjurga" target="_blank" rel="noopener">github.com/andrzejjurga ↗</a></span></p>
+        <p class="l kv"><span class="k">linkedin</span><span class="v"><a href="https://www.linkedin.com/in/andrzejjurga/" target="_blank" rel="noopener">linkedin.com/in/andrzejjurga ↗</a></span></p>
+        <p class="l kv"><span class="k">location</span><span class="v">Poznań, Poland</span></p>
+        <p class="l"></p>
+        <p class="l comment">&lt;!-- happy to talk about AI agents, automation, or anyone's nvim config --&gt;</p>
+      </section>
+
+      <!-- ============ help.txt ============ -->
+      <section class="buf" id="help" data-file="help.txt" data-ft="help">
+        <h1 class="l h1">*help.txt*  <span class="dim">how to move around</span></h1>
+        <p class="l"></p>
+        <p class="l kv"><span class="k">j / k</span><span class="v">move the cursor down / up (arrow keys work too)</span></p>
+        <p class="l kv"><span class="k">gg / G</span><span class="v">jump to the top / bottom</span></p>
+        <p class="l kv"><span class="k">ctrl-d / u</span><span class="v">half a page down / up</span></p>
+        <p class="l kv"><span class="k">1 – 4</span><span class="v">switch buffer</span></p>
+        <p class="l kv"><span class="k">H / L</span><span class="v">previous / next buffer</span></p>
+        <p class="l kv"><span class="k">enter</span><span class="v">open the link (or toggle the preview) on the cursor line</span></p>
+        <p class="l kv"><span class="k">:</span><span class="v">command line</span></p>
+        <p class="l"></p>
+        <h2 class="l h2">commands</h2>
+        <p class="l kv"><span class="k">:e {name}</span><span class="v">open about, projects, experience or contact</span></p>
+        <p class="l kv"><span class="k">:bn / :bp</span><span class="v">next / previous buffer</span></p>
+        <p class="l kv"><span class="k">:colo {name}</span><span class="v">mocha or latte</span></p>
+        <p class="l kv"><span class="k">:set rnu</span><span class="v">relative line numbers (:set nornu to turn off)</span></p>
+        <p class="l kv"><span class="k">:q</span><span class="v">try it</span></p>
+        <p class="l"></p>
+        <p class="l comment">Not a fan of keyboards? Everything is clickable.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="statusline" aria-hidden="true">
+    <span class="sl-mode" id="sl-mode">NORMAL</span>
+    <span class="sl-branch">⎇ main</span>
+    <span class="sl-file" id="sl-file">about.md</span>
+    <span class="sl-fill"></span>
+    <span class="sl-ft" id="sl-ft">markdown</span>
+    <span class="sl-enc">utf-8</span>
+    <span class="sl-pct" id="sl-pct">Top</span>
+    <span class="sl-pos" id="sl-pos">1:1</span>
+  </footer>
+
+  <div class="cmdline">
+    <form id="cmd-form" autocomplete="off" hidden>
+      <label for="cmd-input" class="cmd-prefix">:</label>
+      <input id="cmd-input" type="text" spellcheck="false" autocapitalize="off" aria-label="Command">
+    </form>
+    <button type="button" class="cmd-msg" id="cmd-msg">type <kbd>:help</kbd> and press enter · or tap here</button>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
 </html>
